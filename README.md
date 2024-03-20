@@ -4,15 +4,16 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
-* Matheus Gaston Viana Silveira
 * Arthur Luiz Alves Soares
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Guilherme Henrique Costa Alves
+* Lucas de Souza Pereira
+* Luiz Eduardo Oliveira Faria
+* Matheus Gaston Viana Silveira
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Michelle Hanne Soares de Andrade
+* Gabriel Barbosa da Fonseca
 
 ## Instruções de utilização
 
