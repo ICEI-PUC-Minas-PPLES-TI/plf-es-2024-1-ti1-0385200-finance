@@ -1,9 +1,10 @@
 # Finance
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+Uma aplicação web que irá te auxiliar e ensinar como ter um controle financeiro de qualidade.
 
 ## Alunos integrantes da equipe
 
+* Arthur Almeida Scalioni Salles
 * Arthur Luiz Alves Soares
 * Guilherme Henrique Costa Alves
 * Lucas de Souza Pereira
