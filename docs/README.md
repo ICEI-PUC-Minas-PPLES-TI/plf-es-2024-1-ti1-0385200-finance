@@ -30,10 +30,31 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
+
+{
+O problema está na falta de controle financeiro pessoal, que decorre da escassa educação financeira e da ausência de ferramentas eficazes para gerenciar as finanças. Muitas pessoas têm dificuldades em entender e monitorar seus gastos, resultando em um ciclo de endividamento contínuo e falta de economias para emergências ou objetivos futuros. 
+
+Essa falta de controle financeiro também impacta negativamente a qualidade de vida, causando estresse, ansiedade e instabilidade financeira. Sem uma compreensão clara de suas finanças e sem as ferramentas adequadas para gerenciá-las, as pessoas ficam mais vulneráveis a situações de emergência financeira e têm dificuldade em alcançar seus objetivos de longo prazo, como comprar uma casa, fazer uma viagem ou se aposentar com tranquilidade. Portanto, é necessário uma abordagem ampla para capacitar as pessoas a tomarem controle de suas finanças, interromperem o ciclo de endividamento e alcançarem uma maior estabilidade financeira e bem-estar.
+
+
+Este website será utilizado em um contexto em que as pessoas buscam uma solução prática e eficaz para gerenciar suas finanças pessoais de forma mais consciente e organizada. Os usuários provavelmente enfrentam desafios relacionados ao controle de gastos, acompanhamento de receitas e despesas, e deseja alcançar maior segurança financeira e estabilidade em suas vidas. Eles podem estar buscando uma ferramenta acessível e fácil de usar que os ajude a criar e acompanhar orçamentos, identificar áreas de economia, e entender melhor seus hábitos de consumo para fazer escolhas financeiras mais informadas. Além disso, os usuários podem estar interessados em aprender mais sobre educação financeira, investimentos e estratégias para alcançar seus objetivos financeiros de longo prazo.
+}
+
 ## Objetivos
 
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
 
+{
+
+Objetivo:
+Desenvolver um site para controle financeiro pessoal com o objetivo de capacitar os usuários a alcançar segurança financeira e realizar seus sonhos, fornecendo ferramentas de gestão financeira e recursos educacionais.
+
+Objetivos Específicos:
+
+Criar uma plataforma intuitiva e acessível que permita aos usuários acompanhar suas finanças, criar orçamentos personalizados e visualizar seu progresso em direção aos seus objetivos financeiros.
+Fornecer conteúdo educacional relevante, incluindo dicas de economia, investimento e gestão de dívidas, para capacitar os usuários a tomar decisões financeiras mais informadas e eficazes.
+
+}
 **Links Úteis**:
 
 - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
@@ -59,6 +80,9 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
+{
+O website será utilizado por pessoas de diferentes faixas etárias e origens socioeconômicas que compartilham o desejo de melhorar sua saúde financeira e alcançar uma maior estabilidade e segurança em suas vidas.
+}
 ## Personas
 
 Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
