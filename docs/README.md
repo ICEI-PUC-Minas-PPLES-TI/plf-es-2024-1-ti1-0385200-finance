@@ -130,7 +130,7 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 ## Wireframes
-Link com wirefram interativo:
+Link com wireframe interativo:
 - https://www.figma.com/file/UoB0D9LF0RQa7rtbaMWVqZ/Mockup-Telas-(Copy)?type=design&node-id=2001%3A105&mode=design&t=pMYLSZPil1btUqum-1
 
 Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
