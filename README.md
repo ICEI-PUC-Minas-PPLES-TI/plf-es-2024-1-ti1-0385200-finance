@@ -8,7 +8,6 @@ Uma aplicação web que irá te auxiliar e ensinar como ter um controle financei
 * Arthur Luiz Alves Soares
 * Guilherme Henrique Costa Alves
 * Lucas de Souza Pereira
-* Luiz Eduardo Oliveira Faria
 * Matheus Gaston Viana Silveira
 
 ## Professores responsáveis
