@@ -1,0 +1,55 @@
+{
+    "cartoes":[
+        {
+        "id": 1,
+        "bandeira": "Visa",
+        "numero": "2222 **** **** 2222",
+        "validade": "02/24",
+        "nome": "Micaela Dávila",
+        "saldo": "1000,00",
+        "entradas": "1.500,00",
+        "saidas": "500,00",
+        "limite": "4.000,00"
+        }
+    ],
+    "transacao":[
+        {
+            "id": 2,
+            "nome": "Cafeteria",
+            "tipo": "Saidas",
+            "data": "10/04/2024",
+            "valor": "R$15,90"
+        }
+    ],
+    "metas":[
+        {
+            "id": 4,
+            "valor": "R$200,00",
+            "data": "20/07/2024",
+            "tipo": "viagem"
+        }
+    ],
+    "metas1":[
+        {
+            "id": 4,
+            "valor": "R$1000,00",
+            "data": "13/08/2024",
+            "tipo": "Reforma"
+        }
+    ],    
+    "metas2":[
+        {
+            "id": 4,
+            "valor": "R$600,00",
+            "data": "20/09/2024",
+            "tipo": "Setup"
+        }
+    ], 
+    "gastos":[
+        {
+            "id": 7,
+            "valor": "R$1600,00",
+            "tipo": "Faculdade"
+        }
+    ]
+}
