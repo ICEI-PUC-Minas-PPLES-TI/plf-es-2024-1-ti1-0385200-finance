@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance</title>
+    <title>Visão Geral</title>
+    <link rel="shortcut icon" href="/assets/images/finance.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
+
 <body>
-    
+    <nav>
+        <img id="logo" class="" src="/assets/images/finance-white.png" alt="">
+        <button id="btn_logout" class="btn btn-dark" onclick="logoutUser()">Efetuar Logout</button>
+        <button id="btn_logout" class="btn btn-dark mt-3" data-toggle="modal" data-target="#loginModal">Editar Perfil</button>
+        
+        <!-- MODAL ALTERAR PERFIL -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Editar perfil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                            <h3 class="text-center"><span id="nomeUsuario"></span></h3>
+                            <div class="form-group">
+                                <label for="login" class="">Usuário</label><br>
+                                <input type="text" name="txt_login" id="txt_login" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="nome" class="">Nome completo</label><br>
+                                <input type="text" name="txt_nome" id="txt_nome" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="">Email</label><br>
+                                <input type="text" name="txt_email" id="txt_email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha" class="">Nova Senha</label><br>
+                                <input type="password" name="txt_senha" id="txt_senha" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha2" class="">Confirmação de Senha</label><br>
+                                <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" id="btn_alterar" class="btn btn-info" onclick="changeUser()">Alterar</button>
+                </div>
+            </div>
+            </div>
+        </div> 
+
+        <div class="nav">
+            <ul class="ulnav">
+                <li><a href="">Visão Geral</a></li>
+                <li><a href="">Estatísticas de Gastos</a></li>
+                <li><a href="">Cartões e Contas</a></li>
+                <li><a href="">Metas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- -->
+        <div class="container-fluid flex-fill">
+            <div class="row">
+              <div class="col">
+                <div class="card mt-3 cardbg">
+                    <!-- CARDS -->
+                    <div class="card-body">
+                      <!-- CARD E JS DO CARTAO-->
+                      <h5 class="card-title text-left">Cartoes</h5>
+
+                      <!-- CARTAO -->
+                      <div class="col">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card" style="width: 20rem" id="cartao">
+                                    <div class="card-body">
+                                      <h4 class="card-title text- mb-4" id="bandeira"></h4>
+                                      <h5 class="card-subtitle mb-4 text-body-secondary" id="numero"></h5>
+                                      <p><span href="" class="card-link text-left" id="nome"></span>
+                                      <span class="card-link text-right" id="validade"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-right mt-3">    
+                                    <h6>Saldo Atual</h6>
+                                    <p>R$<span id="saldo"></span></p>
+                                    <h6>Entradas</h6>
+                                    <p id="entradas">R$</p>
+                                    <h6>Saidas</h6>
+                                    <p id="saidas">R$</p>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div> 
+                      <!-- CARD E JS DAS TRANSACOES-->
+                      <h5 class="card-title text-left">Entradas e Saidas</h5>
+                      <div class="transacoes">
+                        <ul id="ultrans" class="transacoes">                           
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <h3 class="text-left mt-2">Metas</h3>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-4">
+                        
+                            <div class="card mt-3 cardbg">
+                                <div class="card-body">
+                                  <h5 class="card-title">Viagens</h5>
+                                  <p class="card-text" id="metas"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card mt-3 cardbg">
+                                <div class="card-body">
+                                    <h5 class="card-title text-end">Reformas</h5>
+                                    <p class="card-text" id="metas1"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card cardbg mt-3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Games</h5>
+                                  <p class="card-text" id="metas2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+              <div class="col">
+                <div class="row">
+                <!-- METAS -->
+                    <div class="col-12 mb-4">
+                            <div class="card mt-3 cardbg">
+                                <div class="card-body">
+                                <h5 class="card-title text-left">Estatisticas de Gastos</h5>
+                                <div id="canvas">
+                                    <canvas id="myChart" ></canvas>  
+                                </div>
+                                                                 
+                                </div>
+                            </div>
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>    
+    </main>
+
+    <div id="login">
+		<div class="container">
+			<div id="login-row" class="row justify-content-center align-items-center">
+				<div id="login-column " class="col-md-6">
+					<div id="login-box" class="col-md-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <footer></footer>
+    <script src="/assets/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/assets/js/visao.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 </body>
+
 </html>
