@@ -1,17 +1,6 @@
+
 {
-  "name": "finance_jsonserver",
-  "version": "1.0.0",
-  "description": "JSON Server auth",
-  "main": "index.js",
-  "scripts": {
-    "start": "json-server --watch db/db.json --static ./public index.js"
-  },
-  "keywords": [],
-  "author": "Matheus Gaston",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
+  "devDependencies": {
     "json-server": "^0.17.4"
   }
 }
