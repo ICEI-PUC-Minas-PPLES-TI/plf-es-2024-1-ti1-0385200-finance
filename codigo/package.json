@@ -1,6 +1,11 @@
-
 {
   "devDependencies": {
     "json-server": "^0.17.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
