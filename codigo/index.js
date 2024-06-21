@@ -3,7 +3,7 @@ const server = jsonServer.create()
 
 const fs = require('fs')
 const path = require('path')
-const filePath = path.join('db/db.json')
+const filePath = path.join(__dirname, 'db/db.json')
 const data = fs.readFileSync(filePath, "utf-8");
 const db = JSON.parse(data);
 const router = jsonServer.router(db)
