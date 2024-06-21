@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas de Gastos</title>
+    <link rel="shortcut icon" href="../assets/images/finance.png" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../assets/css/tabelaDeGraficos.css">
+
+</head>
+
+<body>
+    <nav>
+        <img id="logo" class="" src="../assets/images/finance-white.png" alt="">
+        <div class="nav">
+            <ul class="ulnav">
+                <li><a href="../index.html">Visão Geral</a></li>
+                <li><a href="">Estatísticas de Gastos</a></li>
+                <li><a href="">Cartões e Contas</a></li>
+                <li><a href="">Metas</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <label for="startDate">Data Inicial:</label>
+                <input type="date" id="startDate" class="form-control mb-3">
+                <label for="endDate">Data Final:</label>
+                <input type="date" id="endDate" class="form-control mb-3">
+                <label for="originSelector">Origem:</label>
+                <select id="originSelector" class="form-control mb-3">
+                    <option value="" selected>Todos os cartões</option>
+                    <option value="Cartão NuBank">Cartão NuBank</option>
+                    <option value="Cartão Inter">Cartão Inter</option>
+                    <option value="Cartão Itaú">Cartão Itaú</option>
+                </select>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="col-md-4">
+                <div class="legend-panel" id="legendPanel">
+                    <h5>Legenda</h5>
+                    <p>Selecione um intervalo de data e origem para ver os detalhes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/tabelaDeGraficos.js"></script>
+
+</body>
+
+</html>
