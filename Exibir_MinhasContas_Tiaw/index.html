@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Contas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Minhas contas</h1>
+            <div class="header-right">
+                <p>SELECIONE O MÊS E O ANO</p>
+                <div class="date-picker">
+                    <input type="month" id="monthPicker">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-2 .89-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V6c0-1.11-.89-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
+                    </svg>
+                </div>
+            </div>
+        </header>
+        <section class="status-section">
+            <p>Pendentes</p>
+            <div class="status-buttons">
+                <div class="status-button-container">
+                    <button class="status-button" id="addButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                    </button>
+                    <p>Adicionar</p>
+                </div>
+                <div class="status-button-container">
+                    <button class="status-button" id="allButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 20c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm0-14c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm-1 8h2v2h-2v-2zm0-8h2v6h-2V6z"/>
+                        </svg>
+                    </button>
+                    <p>Todas</p>
+                </div>
+                <div class="status-button-container">
+                    <button class="status-button" id="paidButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </button>
+                    <p>Pagas</p>
+                </div>
+                <div class="status-button-container">
+                    <button class="status-button" id="pendingButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 20c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8zm0-14c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6zm1 9h-2V7h2v8z"/>
+                        </svg>
+                    </button>
+                    <p>Pendentes</p>
+                </div>
+                <div class="status-button-container">
+                    <button class="status-button" id="overdueButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                        </svg>
+                    </button>
+                    <p>Atrasadas</p>
+                </div>
+            </div>
+        </section>
+        <section class="bills-section" id="bills-section">
+            <!-- Contas serão carregadas aqui -->
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
