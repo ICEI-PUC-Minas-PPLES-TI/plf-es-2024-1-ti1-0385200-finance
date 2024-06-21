@@ -17,6 +17,7 @@ const app=express();
 // Servidor abrindo as outras pastas
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/pages', express.static(path.join(__dirname, 'pages')));
+app.use('/db', express.static(path.join(__dirname, 'db')));
 app.use('/', express.static(path.join(__dirname, '')));
 
 app.get('/',(req,res)=>{
