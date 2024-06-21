@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+nav{
+    width: 100%;
+    background: #0E8CB6 !important;
+    padding-bottom: 10px;
+}
+#logo{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    margin: auto;
+}
+.nav ul{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+.transacoes ul{
+    display: flex;
+    margin: auto;
+}
+li{
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.nav li a{
+    width: 100%;
+    color: #444;
+}
+.nav li a:hover{
+    width: 100%;
+    height: 100%;
+    background-color: #224469;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.2s;
+}
+.legend-panel {
+  /* background-color: #0E8CB6; */
+  padding: 20px;
+  border-radius: 10px;
+}
+.legend-item {
+  background-color: #0E8CB6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#startDate, #endDate, #originSelector {
+    margin-bottom: 15px;
+}
