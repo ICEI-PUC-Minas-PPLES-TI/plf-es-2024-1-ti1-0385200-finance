@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="backButton">Voltar</button>
+    </header>
+    
+    <main>
+        <h1>Cadastro de Entradas e Saídas</h1>
+        
+        <form id="operationForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="value">Valor:</label>
+                <input type="number" id="value" name="value">
+            </div>
+            <div class="form-group">
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="category">Categoria:</label>
+                <select id="category" name="category">
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="card">Origem:</label>
+                <select id="card" name="card">
+                    <option value="master_credit">Cartão Master Crédito</option>
+                    <option value="master_debit">Cartão Master Débito</option>
+                    <option value="visa_credit">Cartão Visa Crédito</option>
+                    <option value="visa_debit">Cartão Visa Débito</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Tipo:</label>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="entrada" name="type" value="entrada">
+                        <label for="entrada">Entrada</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="saida" name="type" value="saida">
+                        <label for="saida">Saída</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="saveButton">Salvar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

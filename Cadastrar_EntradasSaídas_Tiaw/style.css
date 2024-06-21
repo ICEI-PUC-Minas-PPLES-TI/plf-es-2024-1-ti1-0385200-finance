@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 4em; 
+}
+
+header {
+    background-color: #134B94;
+    padding: 1em;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#backButton {
+    background-color: white;
+    color: #134B94;
+    border: 2px solid #134B94;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    font-size: 1.25em;
+    border-radius: 0.25em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#backButton:hover {
+    background-color: #134B94;
+    color: white;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 3em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.75em;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid #134B94;
+    border-radius: 0.25em;
+    background-color: white;
+    color: #134B94;
+    font-size: 1.25em;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #0044cc;
+    outline: none;
+    background-color: #f0f2f5;
+}
+
+input[type="radio"] {
+    margin-right: 0.75em;
+}
+
+.radio-group {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.radio-group div {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+#saveButton {
+    background-color: white;
+    color: #134B94;
+    border: 2px solid #134B94;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1.25em;
+    border-radius: 0.25em;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    width: 100%;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#saveButton:hover {
+    background-color: #134B94;
+    color: white;
+}
+
+#category,
+#card {
+    background-color: white;  
+    color: #134B94;             
+    border: 2px solid #134B94; 
+    border-radius: 4px;
+    padding: 10px;            
+    font-size: 16px;         
+    width: 100%;              
+    box-sizing: border-box;   
+}
+
+#category option,
+#card option {
+    background-color: white;  
+    color: black;             
+}
