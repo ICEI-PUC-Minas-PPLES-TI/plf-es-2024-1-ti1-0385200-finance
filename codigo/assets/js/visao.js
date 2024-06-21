@@ -3,7 +3,7 @@ let divSaldo = document.querySelector("#saldo");
 let divEntradas = document.querySelector("#entradas");
 let divSaidas = document.querySelector("#saidas");
 
-fetch("/dados.json").then((response) => {
+fetch("../dados.json").then((response) => {
     response.json().then((dados) => {
         dados.cartoes.map((cartoes) => {
             divSaldo.innerHTML += `<span> ${cartoes.saldo} </span>`;
@@ -16,7 +16,7 @@ fetch("/dados.json").then((response) => {
 // ENTRADAS E SAIDAS 
 let divUl = document.querySelector("#ultrans");
 
-fetch("/dados.json").then((response) => {
+fetch("../dados.json").then((response) => {
     response.json().then((dados) => {
         dados.transacao.map((transacao) => {
             divUl.innerHTML += `<li> ${transacao.nome} </li>`;
@@ -46,7 +46,7 @@ fetch("/dados.json").then((response) => {
 
 let divMetas1 = document.querySelector("#metas1");
 
-fetch("/dados.json").then((response) => {
+fetch("../dados.json").then((response) => {
     response.json().then((dados) => {
         dados.metas1.map((metas1) => {
             divMetas1.innerHTML += `<p> ${metas1.valor}</p>`;
@@ -59,7 +59,7 @@ fetch("/dados.json").then((response) => {
 
 let divMetas2 = document.querySelector("#metas2");
 
-fetch("/dados.json").then((response) => {
+fetch("../dados.json").then((response) => {
     response.json().then((dados) => {
         dados.metas2.map((metas2) => {
             divMetas2.innerHTML += `<p> ${metas2.valor}</p>`;
@@ -76,7 +76,7 @@ let divNumero = document.querySelector("#numero");
 let divNome = document.querySelector("#nome");
 let divValidade = document.querySelector("#validade");
 
-fetch("/dados.json").then((response) => {
+fetch("../dados.json").then((response) => {
     response.json().then((dados) => {
         dados.cartoes.map((cartoes) => {
             divBandeira.innerHTML += `<span> ${cartoes.bandeira} </span>`;
