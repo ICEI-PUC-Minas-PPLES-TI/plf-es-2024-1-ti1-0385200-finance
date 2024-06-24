@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    background-color: #fff;
+    margin-top: 10cm;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 90%; 
+    overflow-y: auto; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    margin-top: auto; 
+    text-align: center; 
+    background-color: #ffffff; 
+    padding: 20px 0; 
+}
+
+.header-right p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.date-picker {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.date-picker input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.date-picker svg {
+    margin-left: 10px;
+}
+
+.status-section {
+    margin-bottom: 20px;
+}
+
+.status-section p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.status-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.status-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-button {
+    background-color: #134B94;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 24px;
+}
+
+.status-button svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.bills-section .bill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1f5fe;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bill .bill-info {
+    flex: 1;
+}
+
+.bill .bill-info p {
+    margin: 0;
+}
+
+.bill .bill-status {
+    background-color: #0277bd;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    background: #0E8CB6 !important;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    padding: 10px 0; 
+    text-align: center; 
+    z-index: 1000; 
+}
+
+#logo{
+    width: 125px;
+    display: flex;
+    margin: auto;
+}
+
+nav ul{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: space-between;
+
+    list-style-type: none; 
+    padding: 0;
+}
+.transacoes ul{
+    display: flex;
+    margin: auto;
+}
+li{
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.nav{
+    display: flex;
+    margin: auto;
+}
+
+.nav li a{
+    width: 100%;
+    color: #444;
+    font-size: 18px;
+}
+.nav li a:hover{
+    width: 100%;
+    height: 100%;
+    background-color: #224469;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
