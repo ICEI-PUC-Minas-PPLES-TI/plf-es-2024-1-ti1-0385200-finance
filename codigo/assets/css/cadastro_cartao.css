@@ -1,0 +1,34 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-preview {
+    background: linear-gradient(135deg, #292e8b, #134B94);
+    color: white;
+    border-radius: 15px;
+}
+
+.card-preview .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card-preview .card-text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+header{
+    background-color:#134B94 ;
+}
+#botao{
+    background-color: #134B94;
+}
+#botao1{
+    background-color: #134B94;
+}
+
