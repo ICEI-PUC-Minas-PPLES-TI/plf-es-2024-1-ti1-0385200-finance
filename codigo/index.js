@@ -10,8 +10,6 @@ const router = jsonServer.router(db)
 const middlewares = jsonServer.defaults()
 const cors = require('cors');
 
-app.use(cors());
-
 const express=require('express');
 
 const app=express();
@@ -21,6 +19,7 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/pages', express.static(path.join(__dirname, 'pages')));
 app.use('/db', express.static(path.join(__dirname, 'db')));
 app.use('/', express.static(path.join(__dirname, '')));
+app.use(cors());
 
 app.get('/',(req,res)=>{
    res.sendFile(path.join(__dirname,'','index.html'));
