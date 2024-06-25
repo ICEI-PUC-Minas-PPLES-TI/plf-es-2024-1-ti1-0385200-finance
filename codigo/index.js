@@ -8,7 +8,9 @@ const data = fs.readFileSync(filePath, "utf-8");
 const db = JSON.parse(data);
 const router = jsonServer.router(db)
 const middlewares = jsonServer.defaults()
+const cors = require('cors');
 
+app.use(cors());
 
 const express=require('express');
 

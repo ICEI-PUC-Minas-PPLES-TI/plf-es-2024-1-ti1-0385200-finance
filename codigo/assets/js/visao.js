@@ -16,8 +16,18 @@ fetch("../dados.json").then((response) => {
 // ENTRADAS E SAIDAS 
 let divUl = document.querySelector("#ultrans");
 
-fetch("../dados.json").then((response) => {
-    response.json().then((dados) => {
+
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
+  
+fetch("../dados.json")
+    .then((response) => {
+    response.json();
+        
+    }).then((dados) => {
         dados.transacao.map((transacao) => {
             divUl.innerHTML += `<li> ${transacao.nome} </li>`;
             divUl.innerHTML += `<li> ${transacao.tipo} </li>`;
@@ -26,8 +36,6 @@ fetch("../dados.json").then((response) => {
 
             
         })
-        
-    })
 })
 
 // METAS
