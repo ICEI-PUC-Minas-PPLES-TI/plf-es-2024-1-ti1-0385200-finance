@@ -1,4 +1,52 @@
 {
-  "categories": [
-  ]
+  "usuarios": [
+    {
+      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    },
+    {
+      "id": "171022ee-09b0-468a-962a-9c0772753cd0",
+      "login": "rommelcarneiro",
+      "senha": "12345",
+      "nome": "Rommel Carneiro",
+      "email": "rommel@abc.com"
+    },
+    {
+      "id": "6c34ca6a-48bd-4cf0-9c03-8cef98069c8b",
+      "login": "teste123",
+      "senha": "123",
+      "nome": "teste da silva junior",
+      "email": "teste@abc.com"
+    }
+  ],
+  "contas": [
+    {
+        "nome": "Conta de água",
+        "valor": "R$ 169,90",
+        "vencimento": "14/04/2022",
+        "status": "Pendente"
+    },
+    {
+        "nome": "Conta de Luz",
+        "valor": "R$ 200,90",
+        "vencimento": "14/04/2022",
+        "status": "Pendente"
+    },
+    {
+        "nome": "Conta de Internet",
+        "valor": "R$ 100,00",
+        "vencimento": "10/04/2022",
+        "status": "Paga"
+    }
+]
 }
