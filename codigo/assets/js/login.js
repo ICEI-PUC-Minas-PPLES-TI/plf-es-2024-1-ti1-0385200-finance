@@ -44,7 +44,7 @@ function initLoginApp () {
     }
 
     // PARTE 2 - INICIALIZA BANCO DE DADOS DE USUÁRIOS
-    fetch(apiUrl)
+    fetch(apiUrl, { mode: 'no-cors' })
         .then(response => response.json())
         .then(data => {
             db_usuarios = data;
