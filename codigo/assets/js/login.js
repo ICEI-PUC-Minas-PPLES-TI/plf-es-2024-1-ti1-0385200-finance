@@ -1,6 +1,6 @@
 // Página inicial de Login
 const LOGIN_URL = "pages/login.html";
-const apiUrl = 'http://localhost:3000/usuarios';
+const apiUrl = 'https://financepuc-99k4g7xj2-financepucminas.vercel.app/db/db.json';
 
 // Objeto para o banco de dados de usuários baseado em JSON
 var db_usuarios = {};
