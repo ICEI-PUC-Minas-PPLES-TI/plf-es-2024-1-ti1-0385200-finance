@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     loadCardPreview();
 
     document.getElementById('card-form').addEventListener('submit', function(event) {

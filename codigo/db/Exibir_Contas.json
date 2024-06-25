@@ -1,4 +1,5 @@
-[
+{
+"contas":[
     {
         "nome": "Conta de água",
         "valor": "R$ 169,90",
@@ -18,3 +19,4 @@
         "status": "Paga"
     }
 ]
+}
