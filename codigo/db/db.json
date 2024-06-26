@@ -26,27 +26,73 @@
       "login": "teste123",
       "senha": "123",
       "nome": "teste da silva junior",
-      "email": "teste@abc.com"
+      "email": "teste@abc.com",
+      "dados": {
+        "cartoes": [
+          {}
+        ],
+        "contas": [
+          {
+            "nome": "Conta de Luz",
+            "valor": "R$ 200,90",
+            "vencimento": "14/04/2022",
+            "status": "Pendente"
+          }
+        ],
+        "metas": [
+          {}
+        ]
+      }
+    },
+    {
+      "id": "e673cee4-50ec-41e3-9852-64d84846fe4d",
+      "login": "cleber",
+      "senha": "cleber",
+      "nome": "cleber da silva junior",
+      "email": "cleber@gmail.com"
     }
   ],
   "contas": [
     {
-        "nome": "Conta de água",
-        "valor": "R$ 169,90",
-        "vencimento": "14/04/2022",
-        "status": "Pendente"
+      "nome": "Conta de água",
+      "valor": "R$ 169,90",
+      "vencimento": "14/04/2022",
+      "status": "Pendente"
     },
     {
-        "nome": "Conta de Luz",
-        "valor": "R$ 200,90",
-        "vencimento": "14/04/2022",
-        "status": "Pendente"
+      "nome": "Conta de Luz",
+      "valor": "R$ 200,90",
+      "vencimento": "14/04/2022",
+      "status": "Pendente"
     },
     {
-        "nome": "Conta de Internet",
-        "valor": "R$ 100,00",
-        "vencimento": "10/04/2022",
-        "status": "Paga"
+      "nome": "Conta de Internet",
+      "valor": "R$ 100,00",
+      "vencimento": "10/04/2022",
+      "status": "Paga"
     }
-]
+  ],
+  "cartoes": [
+    {
+      "id": "1",
+      "bandeira": "Visa",
+      "final": "4444",
+      "titular": "Micaela Davila",
+      "validade": "01/27"
+    },
+    {
+      "id": "0HYPOTs",
+      "bandeira": "Visa",
+      "final": "2222",
+      "titular": "Cleber",
+      "validade": "01/27"
+    },
+    {
+      "id": "xuA-Pfg",
+      "bandeira": "Visa",
+      "final": "2222",
+      "titular": "Cleber",
+      "validade": "01/27"
+    }
+  ]
 }

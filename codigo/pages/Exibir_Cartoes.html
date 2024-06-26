@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Contas</title>
+    <link rel="stylesheet" href="/assets/css/Exibit_Cartoes.css">
+    <link rel="shortcut icon" href="assets/images/finance.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <img id="logo" class="" src="/assets/images/finance-white.png" alt="">
+        <div class="nav">
+            <ul class="ulnav">
+                <li><a href="../index.html">Visão Geral</a></li>
+                <li><a href="tabelaDeGraficos.html">Estatísticas de Gastos</a></li>
+                <li><a href="Exibir_Contas.html">Contas</a></li>
+                <li><a href="Exibir_Cartoes.html">Cartões</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Meus cartões</h1>
+        </header>
+        <section class="status-section">
+
+            <div class="status-buttons">
+                <div class="status-button-container">
+                    <button class="status-button" id="addButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                    </button>
+                    <p>Adicionar</p>
+                </div>
+                <!-- Modal -->
+                <div id="cardModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Adicionar Cartão</h2>
+                        <form id="card-form">
+                            <div class="mb-3">
+                                <label for="card-flag" class="form-label">Bandeira</label>
+                                <input type="text" class="form-control" id="card-flag" placeholder="Bandeira" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="card-number" class="form-label">Final do Cartão</label>
+                                <input type="text" class="form-control" id="card-number" placeholder="****" maxlength="4" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="card-holder" class="form-label">Nome do titular</label>
+                                <input type="text" class="form-control" id="card-name" placeholder="Nome do titular" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="expiration-date" class="form-label">Validade</label>
+                                    <input type="text" class="form-control" id="expiration-date" placeholder="MM/AA" maxlength="5" required>
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="border-primary-custom btn btn-primary" id="botao1" onclick="saveCard()">Adicionar Cartão</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="bills-section" id="bills-section">
+            <!-- Contas serão carregadas aqui -->
+        </section>
+    </div>
+
+    <footer></footer>
+    <script src="../assets/js/Exibir_Cartoes.js"></script>
+
+</body>
+</html>

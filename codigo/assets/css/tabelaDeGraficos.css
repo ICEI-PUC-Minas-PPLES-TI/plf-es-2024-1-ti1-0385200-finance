@@ -53,6 +53,12 @@ li{
     color: #fff;
     transition: 0.2s;
 }
+footer{
+    width: 100%;
+    background: #0E8CB6 !important;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
 .legend-panel {
   /* background-color: #0E8CB6; */
   padding: 20px;

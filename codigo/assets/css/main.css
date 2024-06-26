@@ -5,27 +5,37 @@
     box-sizing: border-box;
     font-family: Poppins;
 }
-html, body{
+html {
     height: 100%;
     width: 100%;
 }
+
+body {
+background-color: #f8f9fa;
+}
+
 nav{
     width: 100%;
     background: #0E8CB6 !important;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+footer{
+    width: 100%;
+    background: #0E8CB6 !important;
+    padding-bottom: 40px;
+    margin-top: 40px;
 }
 #logo{
-    width: 125px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.nav{
     display: flex;
     margin: auto;
 }
-
-nav ul{
+.nav ul{
     width: 90%;
     display: flex;
     margin: auto;
@@ -45,15 +55,9 @@ li{
     padding-right: 5%;
     text-align: center;
 }
-.nav{
-    display: flex;
-    margin: auto;
-}
-
 .nav li a{
     width: 100%;
     color: #444;
-    font-size: 18px;
 }
 .nav li a:hover{
     width: 100%;
@@ -62,12 +66,6 @@ li{
     border-radius: 5px;
     color: #fff;
     transition: 0.2s;
-}
-footer{
-    width: 100%;
-    background: #0E8CB6 !important;
-    padding-bottom: 40px;
-    margin-top: 40px;
 }
 #btn_logout{
     display: flex;
