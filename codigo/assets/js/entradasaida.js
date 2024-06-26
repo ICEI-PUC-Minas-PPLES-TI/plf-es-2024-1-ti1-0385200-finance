@@ -71,3 +71,38 @@ function saveTrans(){
     addTrans(nome, valor, data, tipo);
     alert ('Transacao salva com sucesso.');
 }
+
+
+// Mostra entradas e saidas
+
+fetch(transUrl)
+    .then(res => res.json())
+    .then(data => {
+        if (data && data.length > 0) {
+            console.log(data[0].id);
+        } else {
+            console.log('Nenhuma transação encontrada');
+        }
+    })
+    .catch(error => console.error('Erro:', error)); 
+
+
+function showTrans(){
+    fetch(transUrl)
+        .then(res => res.json ())
+        .then(data => {
+            let str = ''
+                for(let i=0; i<data.length; i++){
+                    let trans = data[i]
+                    str += `<div class="card" style="width: 20rem"> 
+                            <div class="card-body">
+                            <h4 class="card-title text- mb-4" id="bandeira">${trans.nome}</h4>
+                            <h5 class="card-subtitle mb-4 text-body-secondary" id="numero">${trans.valor}</h5>
+                            <p><span href="" class="card-link text-left" id="nome">${trans.data}</span>
+                            <span class="card-link text-right" id="validade">${trans.tipo}</span></p>
+                            </div></div>`
+                }
+            document.getElementById('transacoes').innerHTML = str;
+        })
+}
+showTrans();

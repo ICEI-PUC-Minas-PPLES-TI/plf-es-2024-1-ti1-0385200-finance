@@ -134,25 +134,24 @@ header {
 nav{
     width: 100%;
     background: #0E8CB6 !important;
-    padding-bottom: 80px;
-    padding-top: 40px;
+    padding-bottom: 10px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #333; 
-    padding: 10px 0; 
+    /* padding: 10px 0;  */
     text-align: center; 
     z-index: 1000; 
 }
 
 #logo{
-    width: 125px;
-    display: flex;
+    width: 100px;
+    display: block;
     margin: auto;
 }
 
-nav ul{
+.nav ul{
     width: 90%;
     display: flex;
     margin: auto;
@@ -160,15 +159,10 @@ nav ul{
     background-color: white;
     border-radius: 30px;
     justify-content: space-between;
-
     list-style-type: none; 
     padding: 0;
 }
 
-.transacoes ul{
-    display: flex;
-    margin: auto;
-}
 li{
     display: flex;
     width: 100%;
@@ -184,7 +178,6 @@ li{
 .nav li a{
     width: 100%;
     color: #444;
-    font-size: 18px;
 }
 .nav li a:hover{
     width: 100%;

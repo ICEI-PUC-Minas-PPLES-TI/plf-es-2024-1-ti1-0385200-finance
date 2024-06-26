@@ -31,7 +31,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #0E8CB6;
     color: white;
 }
@@ -71,13 +74,12 @@ main .left {
 }
 
 main .left h1 {
-    font-size: 3em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    font-size: 250%;
 }
 
-main .left p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+main .left h3 {
+    margin-bottom: 20px;
 }
 
 main .left button {
@@ -101,12 +103,12 @@ main .right img {
 }
 
 footer {
-    background-color: #0E8CB6;
+    background: #0E8CB6 !important;
     color: white;
-    padding: 20px;
+    padding-bottom: 20px;
     width: 100%;
     text-align: center;
-    position: fixed;
     left: 0;
     bottom: 0;
+    margin-top: 20px;
 }
