@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Contas</title>
-    <link rel="stylesheet" href="/assets/css/Exibit_Cartoes.css">
+    <link rel="stylesheet" href="/assets/css/cartoes.css">
     <link rel="shortcut icon" href="assets/images/finance.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -21,60 +21,119 @@
         </div>
     </nav>
     <div class="container">
-        <header>
-            <h1>Meus cartões</h1>
-        </header>
-        <section class="status-section">
+        <div class="row">
+            <div class="col">
+                <h1 class="mb-5">Meus cartões</h1>
+                <div class="row">
+                    <!-- Cartao -->
+                    <div class="card ml-4" id="cartao">
 
-            <div class="status-buttons">
-                <div class="status-button-container">
-                    <button class="status-button" id="addButton">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
-                        </svg>
-                    </button>
-                    <p>Adicionar</p>
-                </div>
-                <!-- Modal -->
-                <div id="cardModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Adicionar Cartão</h2>
-                        <form id="card-form">
-                            <div class="mb-3">
-                                <label for="card-flag" class="form-label">Bandeira</label>
-                                <input type="text" class="form-control" id="card-flag" placeholder="Bandeira" required>
+                    </div>
+                    <div class="status-buttons">
+                        <div class="status-button-container ml-3">
+                            <button class="status-button" id="addCartao">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                                </svg>
+                            </button>
+                            <p>Adicionar Cartão</p>
+                        </div>
+
+                        <div class="status-button-container ml-3">
+                            <button class="status-button" id="addButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                                </svg>
+                            </button>
+                            <p>Adicionar Entrada/Saída</p>
+                        </div>
+
+
+                        <!-- Modal Cartao -->
+                        <div id="cardModal" class="modal">
+                            <div class="modal-content">
+                                <span class="closecard">&times;</span>
+                                <h2>Adicionar Cartão</h2>
+                                <form id="card-form">
+                                    <div class="mb-3">
+                                        <label for="card-flag" class="form-label">Bandeira</label>
+                                        <input type="text" class="form-control" id="card-flag" placeholder="Bandeira" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="card-number" class="form-label">Final do Cartão</label>
+                                        <input type="text" class="form-control" id="card-number" placeholder="****" maxlength="4" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="card-holder" class="form-label">Nome do titular</label>
+                                        <input type="text" class="form-control" id="card-name" placeholder="Nome do titular" required>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="expiration-date" class="form-label">Validade</label>
+                                            <input type="text" class="form-control" id="expiration-date" placeholder="MM/AA" maxlength="5" required>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="border-primary-custom btn btn-primary" id="botao1" onclick="saveCard()">Adicionar Cartão</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="mb-3">
-                                <label for="card-number" class="form-label">Final do Cartão</label>
-                                <input type="text" class="form-control" id="card-number" placeholder="****" maxlength="4" required>
+                        </div>
+
+                        <!-- Modal Entrada Saida -->
+                        <div id="entrasaiModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="close">&times;</span>
+                                <h2>Adicionar Entrada/Saida</h2>
+                                <form id="card-form">
+                                    <div class="form-group">
+                                        <label for="name">Nome:</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="value">Valor:</label>
+                                        <input type="number" id="value" name="value">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="date">Data:</label>
+                                        <input type="text" id="date" name="date">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tipo:</label>
+                                        <div class="radio-group">
+                                            <div>
+                                                <input type="radio" id="transacao" name="type" value="Entrada">
+                                                <label for="entrada">Entrada</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="transacao" name="type" value="Saida">
+                                                <label for="saida">Saída</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="border-primary-custom btn btn-primary" id="botao1" onclick="saveTrans()">Adicionar</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="mb-3">
-                                <label for="card-holder" class="form-label">Nome do titular</label>
-                                <input type="text" class="form-control" id="card-name" placeholder="Nome do titular" required>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="expiration-date" class="form-label">Validade</label>
-                                    <input type="text" class="form-control" id="expiration-date" placeholder="MM/AA" maxlength="5" required>
-                                </div>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="border-primary-custom btn btn-primary" id="botao1" onclick="saveCard()">Adicionar Cartão</button>
-                            </div>
-                        </form>
+                        </div>
+        
                     </div>
                 </div>
 
+                <div class="row">
+                    
+                </div>
+
+                <div class="row">
+                    
+                </div>
+
             </div>
-        </section>
-        <section class="bills-section" id="bills-section">
-            <!-- Contas serão carregadas aqui -->
-        </section>
-    </div>
 
     <footer></footer>
-    <script src="../assets/js/Exibir_Cartoes.js"></script>
+    <script src="../assets/js/cartoes.js"></script>
+    <script src="../assets/js/entradasaida.js"></script>
 
 </body>
 </html>

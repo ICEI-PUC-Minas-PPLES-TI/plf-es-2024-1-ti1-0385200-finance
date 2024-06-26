@@ -236,3 +236,9 @@ li{
     text-decoration: none;
     cursor: pointer;
 }
+
+#cartao{
+    border-radius: 10%;
+    background-color: #224469;
+    color: white;
+}

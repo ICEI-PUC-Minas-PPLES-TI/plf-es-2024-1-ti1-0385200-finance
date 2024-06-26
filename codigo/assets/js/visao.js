@@ -16,13 +16,6 @@ fetch("../dados.json").then((response) => {
 // ENTRADAS E SAIDAS 
 let divUl = document.querySelector("#ultrans");
 
-
-fetch('https://api.example.com/data')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-
-  
 fetch("../dados.json")
     .then((response) => {
     response.json();

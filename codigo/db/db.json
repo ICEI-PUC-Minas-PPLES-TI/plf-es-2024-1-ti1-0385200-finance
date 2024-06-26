@@ -94,5 +94,21 @@
       "titular": "Cleber",
       "validade": "01/27"
     }
+  ],
+  "transacoes": [
+    {
+      "id": "1",
+      "nome": "Pix Lucas",
+      "valor": "100.00",
+      "data": "20/06/2024",
+      "tipo": "Entrada"
+    },
+    {
+      "id": "DzPBOov",
+      "nome": "Pix Bruna",
+      "valor": "100.00",
+      "data": "19/06/2024",
+      "tipo": "Entrada"
+    }
   ]
 }
