@@ -33,41 +33,6 @@ header {
     padding: 20px 0; 
 }
 
-.header-right p {
-    margin: 0;
-    font-weight: bold;
-}
-
-.header-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.date-picker {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.date-picker input {
-    padding: 5px;
-    font-size: 16px;
-}
-
-.date-picker svg {
-    margin-left: 10px;
-}
-
-.status-section {
-    margin-bottom: 20px;
-}
-
-.status-section p {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 .status-buttons {
     display: flex;
     gap: 20px;
@@ -98,37 +63,6 @@ header {
     fill: #fff;
     width: 24px;
     height: 24px;
-}
-
-.bills-section .bill {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e1f5fe;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.bill .bill-info {
-    flex: 1;
-}
-
-.bill .bill-info p {
-    margin: 0;
-}
-
-.bill .bill-status {
-    background-color: #0277bd;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    text-align: center;
 }
 
 nav{
@@ -241,4 +175,34 @@ li{
     border-radius: 10%;
     background-color: #224469;
     color: white;
+    width: 50%;
+}
+
+#extrato{
+    font-size: 1.3rem;
+    display: flex;
+    background-color: #96e1ff;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    border-style: solid;
+}
+.extrato{
+    font-size: 1.3rem;
+    display: flex;
+    width: 100%;
+    
+}
+#transacoes{
+    background-color: #96e1ff;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+.info{
+    color: #224469;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

@@ -89,18 +89,22 @@ function showCard(){
         .then(res => res.json ())
         .then(data => {
             let str = '';
-                let cartoes = data[0]
-                str += `<div class="card" style="width: 20rem" id="cartao"> 
-                        <div class="card-body">
-                        <h4 class="card-title text- mb-4" id="bandeira">${cartoes.bandeira}</h4>
-                        <h5 class="card-subtitle mb-4 text-body-secondary" id="numero">${cartoes.final}</h5>
-                        <p><span href="" class="card-link text-left" id="nome">${cartoes.titular}</span>
-                        <span class="card-link text-right" id="validade">${cartoes.validade}</span></p>
-                        </div></div>`
+            let i=0;
+            for(i=0; i<data.length - 1; i++){
+                console.log(i)
+            }   
+            let cartoes = data[i]
+            str += `<div class="card" style="width: 20rem" id="cartao"> 
+                    <div class="card-body">
+                    <h4 class="card-title text- mb-4" id="bandeira">${cartoes.bandeira}</h4>
+                    <h5 class="card-subtitle mb-4 text-body-secondary" id="numero">**** **** **** ${cartoes.final}</h5>
+                    <p><span href="" class="card-link text-left pl-3 pr-5" id="nome">${cartoes.titular}</span>
+                    <span class="card-link text-right pl-5 ml-4" id="validade">${cartoes.validade}</span></p>
+                    </div></div>`
             document.getElementById('cartao').innerHTML = str;
         })
 }
 
-
 showCard();
 
+// Requisicao para mostrar as contas 

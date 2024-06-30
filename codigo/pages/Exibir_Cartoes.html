@@ -22,13 +22,12 @@
     </nav>
     <div class="container">
         <div class="row">
+            <!-- Coluna 1 -->
             <div class="col">
-                <h1 class="mb-5">Meus cartões</h1>
-                <div class="row">
+                <h1 class="mb-5">Meus cartões</h1>    
                     <!-- Cartao -->
-                    <div class="card ml-4" id="cartao">
-
-                    </div>
+                    <div class="mb-3" id="cartao"></div>
+                    <!-- Fim Cartao -->
                     <div class="status-buttons">
                         <div class="status-button-container ml-3">
                             <button class="status-button" id="addCartao">
@@ -119,21 +118,41 @@
                         </div>
         
                     </div>
-                </div>
-
-                <div class="row">
-                    <h1 class="mb-5 mt-5">Entradas e Saídas</h1>
-                    
-                </div>
-
-                <div class="row">
-                    <div id="transacoes">
-                    </div>
-                </div>
 
             </div>
+            <!-- Coluna 2 -->
+            <div class="col">
+                <div class="row mb-5">
+                    <div class="col">
+                      <h1 class="mb-3">Saldo</h1>
+                      <div id="saldo" class="info ms-3"></div>    
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col">
+                      <h1 class="mb-3">Entradas</h1>    
+                      <div id="entradas" class="info ms-3"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                      <h1 class="mb-3">Saidas</h1>  
+                      <div id="saidas" class="info ms-3"></div>  
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <h1 class="mb-5 mt-3 ml-3">Entradas e Saídas</h1>
+            <div class="pt-3 pb-2" id="transacoes"></div>
+        </div>
+                
     <footer></footer>
+    </div>
+
+    
+    </div>
     <script src="../assets/js/cartoes.js"></script>
     <script src="../assets/js/entradasaida.js"></script>
 
