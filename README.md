@@ -17,4 +17,10 @@ Uma aplicação web que irá te auxiliar e ensinar como ter um controle financei
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Assim que baixar o arquivo você deve abrir o terminal de comando com o node.js já instalado
+digitar:
+npm install json-server
+e em seguida:
+npm start
+
+assim você irá conseguir rodar o json server e visualizar o site 
