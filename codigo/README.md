@@ -13,27 +13,46 @@ codigo/  (essa pasta aqui)
 │
 ├── assets/
 │   ├── css/
-│   │   ├── styles.css
-│   │   └── (outros arquivos .css)
-│   │
+│   │   ├── aboutus.css
+│   │   └── cartoes.css
+│   │   └── contascadastro.css
+|   |   └── Entradas_Saidas.css
+|   |   └──Exibir_Contas.css
+|   |   └──home.css
+|   |   └──login.css
+|   |   └──main.css
+|   |   └──tabelaDeGraficos.css
+|   |
 │   ├── js/
-│   │   ├── main.js
-│   │   └── (outros arquivos .js)
+│   │   ├── cartoes.js
+│   │   └── contas.js
+|   |   └── contacadastro.js
+|   |   └── entradasaida.js
+|   |   └── Exibir_Contas.js
+|   |   └── login.js
+|   |   └── tabelaDeGraficos.js
+|   |   └── visao.js
+|   |   
+|   |   
+|   |   
 │   │
 │   ├── images/
-│   │   ├── logo.png
-│   │   └── (outras imagens)
-│   │
-│   └── fonts/
-│       ├── font1.ttf
-│       └── (outras fontes)
+│         ├── logo.png
+│         └── 
+│   
+│   
+│       
+│       
 │
 ├── pages/
-│   ├── about.html
-│   ├── contact.html
-│   └── (outras páginas)
+│   ├── aboutus.html
+│   ├── cadastrocontas.html
+│   └── Exibir_Cartoes.html
+|   └── Exibir_Contas.html
+|   └── home.html
+|   └── login.html
+|   └── tabelaDeGrafico.html
 │
 └── README.md
 ```
 
-Utilize a pasta pages para manter um arquivo para cada pessoa por artefato (sprints 2 e 3) e, com isso, isolar as alterações de cada pessoa, facilitando o trabalho de gestão do código.

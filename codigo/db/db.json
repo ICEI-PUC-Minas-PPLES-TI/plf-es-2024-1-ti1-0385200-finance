@@ -54,21 +54,31 @@
   ],
   "contas": [
     {
+      "id": "1",
       "nome": "Conta de água",
       "valor": "R$ 169,90",
       "vencimento": "14/04/2022",
       "status": "Pendente"
     },
     {
+      "id": "2",
       "nome": "Conta de Luz",
       "valor": "R$ 200,90",
       "vencimento": "14/04/2022",
       "status": "Pendente"
     },
     {
+      "id": "3",
       "nome": "Conta de Internet",
       "valor": "R$ 100,00",
       "vencimento": "10/04/2022",
+      "status": "Paga"
+    },
+    {
+      "id": "jzLDFkU",
+      "nome": "Conta da NET",
+      "valor": "R$ 11,00",
+      "vencimento": "27/06/2024",
       "status": "Paga"
     }
   ],
@@ -129,6 +139,13 @@
       "nome": "Starbucks",
       "valor": "10.00",
       "data": "25/06/2024",
+      "tipo": "Saida"
+    },
+    {
+      "id": "4NR2vmk",
+      "nome": "Pix Cleber",
+      "valor": "100.00",
+      "data": "26/06/2024",
       "tipo": "Saida"
     }
   ]

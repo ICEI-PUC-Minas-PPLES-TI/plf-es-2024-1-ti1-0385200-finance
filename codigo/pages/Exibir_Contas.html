@@ -37,13 +37,53 @@
             <p>Pendentes</p>
             <div class="status-buttons">
                 <div class="status-button-container">
-                    <button class="status-button" id="addButton">
+                    <button class="status-button" id="addConta">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
                         </svg>
                     </button>
                     <p>Adicionar</p>
                 </div>
+                <!-- Modal Cartao -->
+                <!-- O modal -->
+                <div id="cardModal" class="modal">
+                    <div class="modal-content">
+                    <span class="closecard close">&times;</span>
+                    <form id="operationForm">
+                        <div class="form-group">
+                            <label for="name">Nome da conta:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="value">Valor:</label>
+                            <input type="number" id="value" name="value">
+                        </div>
+                        <div class="form-group">
+                            <label for="text">Data:</label>
+                            <input type="text" id="date" name="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Categoria:</label>
+                            <div class="radio-group">
+                                <div>
+                                    <input type="radio" id="transacao" name="type" value="Paga">
+                                    <label for="paga">Paga</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="transacao" name="type" value="Pendente">
+                                    <label for="pendente">Pendente</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="transacao" name="type" value="Atrasada">
+                                    <label for="atrasada">Atrasada</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" id="saveButton" onclick="saveContas()">Salvar</button>
+                    </form>
+                    </div>
+                </div>
+
                 <div class="status-button-container">
                     <button class="status-button" id="allButton">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -78,10 +118,11 @@
                 </div>
             </div>
         </section>
-        <section class="bills-section" id="bills-section">
+        <div id="bills-section">
             <!-- Contas serão carregadas aqui -->
-        </section>
+        </div>
     </div>
-    <script src="/assets/js/Exibir_Contas.js    "></script>
+    <script src="/assets/js/Exibir_Contas.js"></script>
+    <script src="/assets/js/contas.js"></script>
 </body>
 </html>
